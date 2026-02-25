@@ -1,0 +1,15 @@
+name: LQ (Release Title)
+description: >-
+  TRaSH-style low-quality release title matcher. Penalizes low-quality patterns
+  that are best detected in release titles instead of release-group parsing.
+tags:
+- TRaSH
+- LQ
+- Release Title
+conditions:
+- name: LQ Release Title Patterns
+  negate: false
+  pattern: (?i)(\b1XBET\b|\bBEN[ ._-]THE[ ._-]MEN\b|(?:-D3US|D3US-)|(?<=\b[12]\d{3}\b.*?)(?<!\b(?:web[ ._-]?(?:dl|rip)?).*?)\bEVO\b|\bFeranki1980\b|\bGalaxyRG\b|(?<!-)\bjennaortega(?:UHD)?\b|(?<=\b[12]\d{3}\b.*?)(?<!\b(?:web[ ._-]?(?:dl|rip)?).*?)\bPiRaTeS\b|\bREAD(?:\s|\.)+NOTE\b|\bSWTYBLZ\b|\bTeeWee\b|\bTEKNO3D\b|\bWill1869\b)
+  required: true
+  type: release_title
+tests: []
