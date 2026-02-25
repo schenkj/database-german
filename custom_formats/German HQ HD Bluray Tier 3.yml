@@ -1,7 +1,7 @@
 name: German HQ HD Bluray Tier 3
 description: >-
-  TRaSH-style German HQ release-group preference tier. Requires a German audio
-  track and a matching release group for this tier.
+  TRaSH-style German HQ release-group preference tier. Requires German audio,
+  proper source gating, and a matching release group for this tier.
 tags:
 - TRaSH
 - German
@@ -14,9 +14,59 @@ conditions:
   negate: false
   required: true
   type: language
-- name: Release Groups
+- name: Bluray
   negate: false
-  pattern: ^(BHDStudio|hallowed|HiFi|HONE|LoRD|playHD|SPHD|W4NK3R)$
   required: true
+  source: bluray
+  type: source
+- name: Not Remux
+  negate: true
+  pattern: Remux
+  required: true
+  type: release_title
+- name: Not 2160p
+  negate: true
+  required: true
+  resolution: 2160p
+  type: resolution
+- name: BHDStudio
+  negate: false
+  pattern: BHDStudio
+  required: false
+  type: release_group
+- name: hallowed
+  negate: false
+  pattern: hallowed
+  required: false
+  type: release_group
+- name: HiFi
+  negate: false
+  pattern: HiFi
+  required: false
+  type: release_group
+- name: HONE
+  negate: false
+  pattern: HONE
+  required: false
+  type: release_group
+- name: LoRD
+  negate: false
+  pattern: LoRD
+  required: false
+  type: release_group
+- name: playHD
+  negate: false
+  pattern: playHD
+  required: false
+  type: release_group
+- name: SPHD
+  negate: false
+  pattern: SPHD
+  required: false
+  type: release_group
+- name: W4NK3R
+  negate: false
+  pattern: W4NK3R
+  required: false
   type: release_group
 tests: []
