@@ -1,0 +1,22 @@
+name: German HQ HD Bluray Tier 1
+description: >-
+  TRaSH-style German HQ release-group preference tier. Requires a German audio
+  track and a matching release group for this tier.
+tags:
+- TRaSH
+- German
+- HQ
+- Release Group
+conditions:
+- exceptLanguage: false
+  language: german
+  name: Includes German
+  negate: false
+  required: true
+  type: language
+- name: Release Groups
+  negate: false
+  pattern: ^(BBQ|BMF|c0kE|Chotab|CRiSC|CtrlHD|D-Z0N3|Dariush|decibeL|DON|EbP|EDPH|Geek|LolHD|NCmt|PTer|TayTO|TDD|TnP|VietHD|ZQ|ZoroSenpai)$
+  required: true
+  type: release_group
+tests: []

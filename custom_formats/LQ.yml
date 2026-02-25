@@ -1,0 +1,15 @@
+name: LQ
+description: >-
+  TRaSH-style low-quality release group matcher. Penalizes known low-quality
+  groups so they are less likely to be selected in German-focused profiles.
+tags:
+- TRaSH
+- LQ
+- Release Group
+conditions:
+- name: LQ Release Groups
+  negate: false
+  pattern: (?i)^(24xHD|41RGB|4K4U|AOC|AROMA|aXXo|AZAZE|BARC0DE|BAUCKLEY|BdC|beAst|BTM|C1NEM4|C4K|CDDHD|CHAOS|CHD|CiNE|COLLECTiVE|CREATiVE24|CrEwSaDe|CTFOH|d3g|DDR|DNL|DRX|E|EPiC|EuReKA|FaNGDiNG0|Feranki1980|FGT|FMD|FRDS|FZHD|GalaxyRG|GHD|GPTHD|HDHUB4U|HDS|HDT|HDTime|HDWinG|iNTENSO|iPlanet|iVy|jennaortega(?:UHD)?|JFF|KC|KiNGDOM|KIRA|L0SERNIGHT|LAMA|Leffe|Liber8|LiGaS|LUCY|MarkII|MeGusta|Mesc|mHD|mSD|MTeam|MT|MySiLU|NhaNc3|nHD|nikt0|NoGr(?:ou)?p|nSD|OFT|Pahe(?:\.(?:ph|in))?|PATOMiEL|PRODJi|PSA|PTNK|RARBG|RDN|Rifftrax|RU4HD|SANTi|Scene|SHD|ShieldBearer|STUTTERSHIT|SUNSCREEN|TBS|TEKNO3D|Tigole|TIKO|VISIONPLUSHDR(?:-X|1000)?|WAF|WiKi|x0r|YIFY|YTS(?:\.(?:MX|LT|AG))?|Zeus)$
+  required: true
+  type: release_group
+tests: []
