@@ -1,0 +1,23 @@
+name: German Audio + Original Language
+description: >-
+  Prioritizes releases that include German audio and explicitly indicate
+  dual/multi-language audio in the release title. Combined with
+  `language: must_original` on profiles, this prefers German dual-language
+  releases while still requiring the original audio language.
+tags:
+- Language
+- German
+- Dual Language
+conditions:
+- exceptLanguage: false
+  language: german
+  name: Includes German
+  negate: false
+  required: true
+  type: language
+- name: German Dual-Language Title
+  negate: false
+  pattern: (?i)(?:\bDL\b|\bDual(?:[ ._-]?Audio)?\b|\bMulti(?:[ ._-]?Audio|[ ._-]?Lang(?:uage)?)?\b|\bGerman\b(?=.*\b(?:DL|Dual|Multi)\b))
+  required: true
+  type: release_title
+tests: []
