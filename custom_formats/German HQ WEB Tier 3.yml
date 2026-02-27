@@ -1,0 +1,72 @@
+name: German HQ WEB Tier 3
+description: >-
+  TRaSH-style German HQ release-group preference tier. Requires German audio,
+  proper source gating, and a matching release group for this tier.
+tags:
+- TRaSH
+- German
+- HQ
+- Release Group
+conditions:
+- exceptLanguage: false
+  language: german
+  name: Includes German
+  negate: false
+  required: true
+  type: language
+- name: Web Source
+  negate: false
+  pattern: WEB[ ._-]?(DL|RIP)
+  required: true
+  type: release_title
+- name: BLOOM
+  negate: false
+  pattern: BLOOM
+  required: false
+  type: release_group
+- name: Dooky
+  negate: false
+  pattern: Dooky
+  required: false
+  type: release_group
+- name: GNOMiSSiON
+  negate: false
+  pattern: GNOMiSSiON
+  required: false
+  type: release_group
+- name: HHWEB
+  negate: false
+  pattern: HHWEB
+  required: false
+  type: release_group
+- name: NINJACENTRAL
+  negate: false
+  pattern: NINJACENTRAL
+  required: false
+  type: release_group
+- name: NPMS
+  negate: false
+  pattern: NPMS
+  required: false
+  type: release_group
+- name: ROCCaT
+  negate: false
+  pattern: ROCCaT
+  required: false
+  type: release_group
+- name: SiGMA
+  negate: false
+  pattern: SiGMA
+  required: false
+  type: release_group
+- name: SLiGNOME
+  negate: false
+  pattern: SLiGNOME
+  required: false
+  type: release_group
+- name: SwAgLaNdEr
+  negate: false
+  pattern: SwAgLaNdEr
+  required: false
+  type: release_group
+tests: []

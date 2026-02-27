@@ -1,0 +1,77 @@
+name: German HQ Remux Tier 1
+description: >-
+  TRaSH-style German HQ release-group preference tier. Requires German audio,
+  proper source gating, and a matching release group for this tier.
+tags:
+- TRaSH
+- German
+- HQ
+- Release Group
+conditions:
+- exceptLanguage: false
+  language: german
+  name: Includes German
+  negate: false
+  required: true
+  type: language
+- name: Remux
+  negate: false
+  pattern: Remux
+  required: true
+  type: release_title
+- name: Not DVD
+  negate: true
+  required: true
+  source: dvd
+  type: source
+- name: 3L
+  negate: false
+  pattern: 3L
+  required: false
+  type: release_group
+- name: BiZKiT
+  negate: false
+  pattern: BiZKiT
+  required: false
+  type: release_group
+- name: BLURANiUM
+  negate: false
+  pattern: BLURANiUM
+  required: false
+  type: release_group
+- name: BMF
+  negate: false
+  pattern: BMF
+  required: false
+  type: release_group
+- name: CiNEPHiLES
+  negate: false
+  pattern: CiNEPHiLES
+  required: false
+  type: release_group
+- name: FraMeSToR
+  negate: false
+  pattern: FraMeSToR
+  required: false
+  type: release_group
+- name: PiRAMiDHEAD
+  negate: false
+  pattern: PiRAMiDHEAD
+  required: false
+  type: release_group
+- name: PmP
+  negate: false
+  pattern: PmP
+  required: false
+  type: release_group
+- name: WiLDCAT
+  negate: false
+  pattern: WiLDCAT
+  required: false
+  type: release_group
+- name: ZQ
+  negate: false
+  pattern: ZQ
+  required: false
+  type: release_group
+tests: []
