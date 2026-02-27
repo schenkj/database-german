@@ -18,7 +18,7 @@ custom_formats:
 - name: LQ (Release Title)
   score: -35000
 - name: German Audio + Original Language
-  score: 50000
+  score: 320000
 - name: German HQ Remux Tier 1
   score: 281000
 - name: German HQ Remux Tier 2
